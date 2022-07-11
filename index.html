@@ -8,25 +8,28 @@
 
         <h1>Запись на курсы программирования</h1>
         <hr align="left" width="50%">
-        <labeL>Имя:<br><input type="text>" placeholder="Андрей"></labeL>
+        <labeL for="name">Имя:<br><input type="text" id="name" placeholder="Максим"></labeL>
             <p>
-            <input type="radio" name="proglang">Java
-            <input type="radio" name="proglang" >Python
-            <input type="radio" name="proglang" >C++
-            <input type="radio" name="proglang" >PHP
-            <input type="radio" name="proglang" >JavaScript
+                <input type="radio" value="java" checked id="java"><label for="java">Java</label>
+                <input type="radio" value="c++" id="c++"><label for="c++">C++</label>
+                <input type="radio" value="python" id="pt"><label for="pt">Python</label>
+                <input type="radio" value="php" id="php"><label for="php">PHP</label>
+                <input type="radio" value="js" id="js"><label for="js"> JavaScript</label>
             </p>
-        <labeL>Дополнительная информация:<br></labeL>
+        <labeL for="Description">Дополнительная информация:<br></labeL>
 
-        <textarea class="m" rows="3" cols="22" name="Description" placeholder="Есть опыт программирования на Java">
+       <p><textarea class="m" rows="3" cols="22" id="Description" placeholder="Есть опыт программирования на Java">
 
-        </textarea><br><br>
-            <labeL>Секретное слово:</labeL><br>
-            <input type="password" value="*******" >
-        <p><input type="checkbox" >С правилами ознакомился и согласен</p>
+        </textarea>
+       <p>
+            <labeL for="secret">Секретное слово:</labeL><br>
+            <input type="password" id="secret" value="*******" >
+        </p>
         <p>
-            <input type="button" value="Отправить">
-            <input type="button" value="Очистить">
+            <input type="checkbox" id="rules"><label for="rules">С правилами ознакомился и согласен</label></p>
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
         </p>
         <hr align="left" width="50%">
 
